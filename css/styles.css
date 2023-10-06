@@ -81,14 +81,34 @@ a {
     gap: 40px;
 }
 
+.header-menu-item {
+    
+}
+
 .header-menu-link {
     color: #2E2F42;
     padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.header-menu-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    border-radius: 2px;
+    background: #404BBF;
+    height: 4px;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-menu-link:hover,
 .header-menu-link:focus {
     color: #404BBF;
+    transform: translateY(0);
 }
 
 .contact-info {
@@ -106,6 +126,7 @@ a {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-address-link:hover,
@@ -155,12 +176,15 @@ a {
     border-radius: 4px;
     border: none;
     min-width: 169px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-btn:hover,
 .main-btn:focus,
 .main-btn:active {
     background-color: #404BBF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .features {
@@ -191,6 +215,16 @@ a {
 
 .features-item {
     width: calc((100% - 72px) / 4);
+}
+
+.features-icon-bg {
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+    background: #F4F4FD;
+    padding: 24px 100px;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
 }
 
 .features-item-title {
@@ -260,6 +294,14 @@ a {
     letter-spacing: 0.02em;
 }
 
+.team-soc-list{
+}
+
+.team-soc-item {}
+
+.team-soc-icon {
+}
+
 .portfolio {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -285,7 +327,37 @@ a {
     width: calc((100% - 48px) / 3);
 }
 
+.portfolio-item:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-item:hover .portfolio-cover-block {
+    transform: translateY(0);
+}
+
 .portfolio-image {}
+
+.portfolio-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-cover-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #4D5AE5;
+    padding: 40px 32px 164px 32px;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-cover-text {
+    color: #F4F4FD;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
 
 .portfolio-descr {
     padding: 32px 16px;

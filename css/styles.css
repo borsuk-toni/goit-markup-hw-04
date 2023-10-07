@@ -299,14 +299,34 @@ a {
 .team-soc-list{
     display: flex;
     gap: 24px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
 }
 
-.team-soc-item {}
+.team-soc-item {
+    
+}
 
 .team-soc-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+    background-color: #404BBF;
+    cursor: pointer;
 }
 
 .team-soc-icon {
+   fill: #F4F4FD;
 }
 
 .portfolio {
@@ -395,19 +415,21 @@ a {
 
 .footer-logo {
     color: #4d5ae5;
-    font-family: 'Raleway',
-        sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-bottom: 16px;
-    display: inline-block;
 }
 
 .logo-footer {
     color: #f4f4fd;
+}
+
+.footer-together {
+    display: flex;
+    gap: 120px;
 }
 
 .footer-text {
@@ -416,7 +438,48 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
+    margin-top: 16px;
 }
 
-.footer-container {
+.footer-container {}
+
+.footer-soc-part {
+        
+}
+
+.footer-soc-title {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.footer-soc-list {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.footer-soc-item {
+}
+
+.footer-soc-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+    background-color: #31D0AA;
+}
+
+.footer-soc-icon {
+    fill: #F4F4FD;
 }

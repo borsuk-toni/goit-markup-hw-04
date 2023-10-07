@@ -267,7 +267,7 @@ a {
 .team-list {
     display: flex;
     gap: 24px;
-
+    justify-content: center;
 }
 
 .team-item {
@@ -301,6 +301,7 @@ a {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .team-soc-list{
@@ -308,7 +309,6 @@ a {
     gap: 24px;
     justify-content: center;
     align-items: center;
-    margin-top: 8px;
 }
 
 .team-soc-item {
